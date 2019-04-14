@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_rectangle/category.dart';
 
-final _backgroundColor = Colors.green[100];
+final _backgroundColor = Colors.red[100];
 
 class CategoryRoute extends StatelessWidget {
   const CategoryRoute();
