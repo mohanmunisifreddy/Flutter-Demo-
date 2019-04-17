@@ -55,7 +55,6 @@ class Category extends StatelessWidget {
           splashColor: color,
           onTap: () {
             _navigateToConverter(context);
-            print("I was tapped!");
           },
           child: Padding(
             padding: EdgeInsets.all(8.0),
