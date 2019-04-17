@@ -27,19 +27,18 @@ class Category extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          home: Scaffold(
+        return Scaffold(
             appBar: AppBar(
-              title: Text(name),
+              elevation: 1.0,
+              title: Text(
+                  name,
+                  style: Theme.of(context).textTheme.display1,
+              ),
               backgroundColor: color,
               centerTitle: true,
-              automaticallyImplyLeading: true,
-              leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context, false)),
             ),
             body: ConverterRoute(name: name, color: color, units: units),
-          ),
-        );
+          );
       })
     );
   }
@@ -86,50 +85,3 @@ class Category extends StatelessWidget {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//class Category extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Container(
-//        color: Colors.teal[300],
-//        height: 100.0,
-//        child: Padding(
-//          padding: EdgeInsets.all(8.0),
-//          child: InkWell(
-//              onTap: () => print("I was tapped"),
-//              highlightColor: Colors.redAccent,
-//              splashColor: Colors.amberAccent,
-//              child: Row(
-//                children: <Widget>[
-//                  Padding(
-//                    padding: EdgeInsets.all(16.0),
-//                    child: Icon(Icons.accessibility, size: 60.0,),
-//                  ),
-//                  Center(
-//                    child: Text("Person", style: TextStyle(fontSize: 24.0),),
-//                  )
-//                ],
-//              )),
-//        ));
-//  }
-//}
-
-
